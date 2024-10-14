@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url('/static/fontes/PokemonHollow.ttf') format('truetype');
+}
+
+html,body{
+    box-sizing: border-box;
+    background: rgb(255,222,77);
+    background: linear-gradient(to bottom, rgba(255,222,77,1), rgba(247,231,162,1) , rgba(241,238,223,1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+h1,h2{
+    font-family: 'Pokemon', sans-serif;
+    font-size: 100px;
+    color: #fecc07;
+    text-shadow:2px 2px 1px #3d6794;
+}
+
+#buscar{
+    margin-top: 80px;
+    box-shadow: 2px 2px 2px 2px #3d6794;
+    border-radius: 10px;
+    width: 800px;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#header img{
+    margin-right: 20px;
+    width: 70px;
+}
+#inserir{
+    margin-top: 10px;
+    width: 400px;
+    border: 3px solid #3d6794;
+    border-radius: 20px;
+    padding: 10PX;
+    color: #57575a;
+    background-color: rgba(247,231,162,1);
+    margin-bottom: 20px;
+    
+}
+footer{
+    position: fixed;
+    background-color: #57575a;
+    text-align: center;
+    bottom: 0px;
+    padding: 5px;
+    border: 2px outset rgb(255, 255, 255);
+    width: 100%;
+}
+
+
+#imagem {
+       border-top: 2px dashed #57575a;
+       margin-top: 30px;
+       box-shadow: 2px 2px 2px 2px #3d6794;
+       border-radius: 10px;
+       width: 800px;
+       background-color: rgba(0,0,0,0.3);
+}
+#imagem img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50%;
+    width: 450px;
+    border: outset 3px #3d6794;
+    border-radius: 20px;
+}   
+#imagem figcaption{
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-family: 'Pokemon', sans-serif;
+    font-size: 30px;
+}
+#imagem p{
+    font-family: 'Pokemon', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    text-align: left;
+    
+}
+
+@media screen and (max-width:768px) {
+    #buscar{
+        width: 400px;
+    }
+    #imagem{
+        width: 400px;
+    }
+    
+}
